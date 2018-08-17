@@ -1,9 +1,10 @@
 /* margin 96px unrelated, 48px unrelated
 padding 24px margin horizontal 128px*/
 
-.green-layout header, .green-layout nav {
+.green-layout header, .green-layout nav, .green-layout nav a {
   background: #72F6B2;
   color: #353535;
+  text-decoration: none;
 }
 
 .blue-layout header, .blue-layout nav {

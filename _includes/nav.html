@@ -2,7 +2,7 @@
 <nav>
   <ul>
     <li>About</li>
-    <li>Blog</li>
+    <li><a href="news.html"  {% if page.url == node.url %} class="active" {% endif %}>News</a></li>
     <li>Contact</li>
   </ul>
 </nav>
