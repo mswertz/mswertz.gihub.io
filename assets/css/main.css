@@ -7,14 +7,16 @@ padding 24px margin horizontal 128px*/
   text-decoration: none;
 }
 
-.blue-layout header, .blue-layout nav {
+.blue-layout header, .blue-layout nav, .blue-layout nav a{
   background: #017FFD;
   color: white;
+  text-decoration: none;
 }
 
-.black-layout header, .black-layout nav {
+.black-layout header, .black-layout nav, .black-layout nav a {
   background: #353535;
   color: #72F6B2;
+  text-decoration: none;
 }
 
 .green-layout header h1 {
