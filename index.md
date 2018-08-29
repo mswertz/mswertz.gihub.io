@@ -1,7 +1,7 @@
 ---
 title: MOLGENIS
 intro: Flexible software for scientific data
-layout: green
+layout: blue
 partners:
 - bbmri-nl-bw.png: http://bbmri.nl
 - bbmri-eric-bw.png: http://bbmri-eric.eu
@@ -20,16 +20,12 @@ partners:
 - e-rare-bw.png: http://www.erare.eu/financed-projects/insaid
 ---
 
- MOLGENIS provides researchers with user friendly and scalable software infrastructures to capture, exchange, and exploit the large amounts of data that is being produced by scientific organisations all around the world.
-
 # Get molgenis
-Get MOLGENIS data platform [here](https://github.com/molgenis/molgenis)
+MOLGENIS data platform: [docs](https://molgenis.gitbooks.io/molgenis/content/), [war](https://molgenis.gitbooks.io/molgenis/content/quickstart/guide-tomcat.html), [docker](https://github.com/molgenis/docker), [code](https://github.com/molgenis/molgenis), [releases](https://github.com/molgenis/molgenis/releases)
 
-Get MOLGENIS compute platform [here](https://github.com/molgenis/molgenis-compute)
+MOLGENIS compute platform: [docs](https://rawgit.com/molgenis/molgenis-compute/master/molgenis-compute-core/README.html),[releases](https://github.com/molgenis/molgenis-compute/releases), [code](https://github.com/molgenis/molgenis-compute).
 
-Get MOLGENIS DNA pipeline [here](https://github.com/molgenis/NGS_DNA)
-
-Get MOLGENIS RNA pipeline [here](https://github.com/molgenis/NGS_RNA)
+Pipelines: DNA pipeline [docs](https://molgenis.gitbooks.io/ngs_dna/), [code](https://github.com/molgenis/NGS_DNA), [RNA pipeline](https://github.com/molgenis/NGS_RNA), [easybuild for automatic installation](https://github.com/molgenis/easybuild-easyconfigs)
 
 # Partners
 MOLGENIS is developed in collaboration with and funded by:
