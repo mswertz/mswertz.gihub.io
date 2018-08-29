@@ -1,6 +1,6 @@
 ---
 title: MOLGENIS
-intro: How to get MOLGENIS as service, download or as open source software code 
+intro: How to get MOLGENIS as service, download or as open source software code
 layout: blue
 ---
 # Hosting and support
@@ -15,19 +15,19 @@ Lygature, Utrecht
 website: <http://www.ctmm-trait.nl/service-desk/>
 
 # Download and install yourself
-You can also install MOLGENIS on your own machines (Licence: LGPLv3)
+You can also install MOLGENIS on your own machines (Licence: LGPLv3). See [Releases](https://github.com/molgenis/molgenis/releases) for overview of versions.
 
 **Install on Linux**  
 
 To install on Linux you need
 * MOLGENIS 'WAR' file (Choose download WAR [here](https://search.maven.org/search?q=g:org.molgenis%20AND%20a:molgenis-app here))
-* Java Platform (JDK) 8u171
-* Apache Tomcat v8.5.x
-* PostgreSQL v9.6.x
-* Elasticsearch v5.5
-* Optional: OpenCPU 2.0 (enables R scripting feature)
-* Optional: Python 3.6 (enables Python scripting feature)
-See [Manual](https://molgenis.gitbooks.io/molgenis/content/quickstart/guide-tomcat.html).
+* Java Platform (JDK)
+* Apache Tomcat
+* PostgreSQL
+* Elasticsearch
+* Optional: OpenCPU (enables R scripting feature)
+* Optional: Python (enables Python scripting feature)
+See for details on versions used the [Manual](https://molgenis.gitbooks.io/molgenis/content/quickstart/guide-tomcat.html).
 
 **Install using Docker (experimental)**
 
