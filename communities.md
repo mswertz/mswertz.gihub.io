@@ -15,6 +15,8 @@ Examples:
 * [BBMRI-NL catalogue of biobank collections](http://catalogue.bbmri.nl) (Contact: David van Enckevort, BBMRI-NL, Groningen)
 * [RD-Connect samples catalogue](http://samples.rd-connect.nl) (Contact: Mary Wong, Telethon, Milano)
 
+# FAIR and interoperability platform
+
 # Patient / mutation registries
 
 TODO describe rare disease patient mutation registry here.
