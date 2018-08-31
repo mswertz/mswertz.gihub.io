@@ -60,6 +60,7 @@ Links:
 * [WormQTL - Public archive and analysis web portal for natural variation data in Caenorhabditis spp.](http://www.wormqtl.org) (Contact: Jan Kammenga, Wageningen University)
 
 Publications:
+* Van der Velde et al (2018) MOLGENIS Research: Advanced bioinformatics data software for non-bioinformaticians. [Bioinformatics](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty742/5085379)
 * Li et al (2016) A Functional Genomics Approach to Understand Variation in Cytokine Production in Humans. [Cell](https://www.ncbi.nlm.nih.gov/pubmed/27814507)
 * Netea et al (2016) Understanding human immune function using the resources from the Human Functional Genomics Project. [Nature Medicine](https://www.ncbi.nlm.nih.gov/pubmed/27490433)
 * Snoek et al (2013) WormQTL--public archive and analysis web portal for natural variation data in Caenorhabditis spp. [Nucleic Acids Research](https://www.ncbi.nlm.nih.gov/pubmed/23180786)
