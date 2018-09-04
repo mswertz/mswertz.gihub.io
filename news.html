@@ -1,21 +1,18 @@
 ---
-title: news
-intro: Here you find events, releases, publications and other news items.
+title: news archive
+intro: Here you can find all news items
 layout: green
 ---
-
-<ul>
 {% for post in site.posts %}
-     {% unless post.next %}
-       <h3>{{ post.date | date: '%Y %b' }}</h3>
-     {% else %}
-       {% capture year %}{{ post.date | date: '%Y %b' }}{% endcapture %}
-       {% capture nyear %}{{ post.next.date | date: '%Y %b' }}{% endcapture %}
-       {% if year != nyear %}
-         <h3>{{ post.date | date: '%Y %b' }}</h3>
-       {% endif %}
-     {% endunless %}
-
-     <li><a href="{{ post.url }}">{{ post.title }} ({{ post.date }})</a></li>
-   {% endfor %}
-</ul>
+<article onclick="location.href = '{{ post.url }}'" style="cursor: pointer">
+    <h1>{{ post.title }}</h1>
+    <summary>
+      <p>
+        <small><i>Posted {{ post.date | date: '%A, %B %d, %Y'}}</i></small>
+      </p>
+      <p>
+        <b> {{post.intro}} </b> {{ post.excerpt | strip_html | truncatewords: 50 }} <a href="{{ post.url }}">Read more</a>
+      </p>
+    </summary>
+</article>
+{% endfor %}

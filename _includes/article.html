@@ -2,7 +2,8 @@
   <header>
     {% if page.image %}<img src="{{page.image}}"/><div class="titlebox">{% endif %}
       <h1>{{ page.title}}</h1>
-      <p>{{ page.intro }}<p>
+      <p>{{ page.intro }} {% if page.date %} <br/><i>(Posted {{ page.date | date: '%A, %B %d, %Y'}})</i>{% endif %}
+<p>
     {% if page.image %}</div>{% endif %}
  </header>
   <section>

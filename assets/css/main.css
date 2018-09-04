@@ -1,46 +1,6 @@
 /* margin 96px unrelated, 48px unrelated
 padding 24px margin horizontal 128px*/
 
-.green-layout header, .green-layout nav, .green-layout nav a {
-  background: #72F6B2;
-  color: #353535;
-  text-decoration: none;
-}
-
-.blue-layout header, .blue-layout nav, .blue-layout nav a{
-  background: #017FFD;
-  color: white;
-  text-decoration: none;
-}
-
-.black-layout header, .black-layout nav, .black-layout nav a {
-  background: #353535;
-  color: #72F6B2;
-  text-decoration: none;
-}
-
-.green-layout header h1 {
-  color: #353535;
-  border-top: solid 4px #353535;
-}
-
-.blue-layout header h1 {
-  border-top: solid 4px white;
-}
-
-.black-layout header h1 {
-  border-top: solid 4px #72F6B2;
-}
-
-h2, h3 {
-  color: #353535;
-}
-
-section h1 {
-  color: #017FFD;
-  border-top: solid 4px #017FFD;
-}
-
 /* fonts */
 @font-face {
     font-family: BebasNeueBold;
@@ -62,30 +22,140 @@ section h1 {
     src: url(/assets/fonts/IBMPlexMono-Lightitalic.woff);
 }
 
-nav, h1, h2 {
-  font-family: BebasNeueBold, Oswald, sans-serif;
+/* colors */
+.green-layout header, .green-layout nav, .green-layout nav a {
+  background: #72F6B2;
+  color: #353535;
+  text-decoration: none;
 }
 
-header p, section intro {
-  font-family: IBMPlexMono, Roboto, monospace;
+.blue-layout header, .blue-layout nav, .blue-layout nav a{
+  background: #017FFD;
+  color: white;
+  text-decoration: none;
 }
 
-section {
-  font-family: IBMPlexSans, Roboto, sans-serif;
+.black-layout header, .black-layout nav, .black-layout nav a {
+  background: #353535;
+  color: #72F6B2;
+  text-decoration: none;
+}
+
+.green-layout header h1 {
+  color: #353535;
+  border-top: solid 2px #353535;
+}
+
+.blue-layout header h1 {
+  border-top: solid 2px white;
+}
+
+.black-layout header h1 {
+  border-top: solid 2px #72F6B2;
+}
+@media (min-width: 768px) {
+  .green-layout header h1 {
+    border-top: solid 4px #353535;
+  }
+
+  .blue-layout header h1 {
+    border-top: solid 4px white;
+  }
+
+  .black-layout header h1 {
+    border-top: solid 4px #72F6B2;
+  }
 }
 
 
-section blockquote {
-  font-family: IBMPlexMono-LightItalic;
+
+.black-layout header p {
+  color: white;
 }
 
-/* size and space [TODO make responsive]*/
-
-body, nav, header, section, article {
+/* body */
+body {
   margin: 0px;
 }
 
+/* site nav */
+nav {
+  font-family: BebasNeueBold, Oswald, sans-serif;
+  margin: 0px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  overflow-x: scroll;
+}
+
+nav li {
+  display: inline-block;
+  padding-left: 16px;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+nav ul li:first-child
+{
+  float: left;
+}
+
+#logo {
+  height: 38px;
+  padding-top: 16px; /* 48 + half line height (24/2=12) - half size (44/2 = 22) = 38 */
+  padding-left: 24px;
+  float: left;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    padding-bottom: 48px;
+    padding-top: 24px;
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+  nav li {
+    padding-left: 24px;
+    font-size: 24px;
+    line-height: 26px;
+  }
+  #logo {
+    height: 42px;
+    padding-top: 17px; /* 48 + half line height (24/2=12) - half size (44/2 = 22) = 38 */
+    padding-left: 64px;
+  }
+}
+@media (min-width: 1200px) {
+  nav ul {
+    padding-bottom: 96px;
+    padding-top: 24px;
+    margin-left: 128px;
+    margin-right: 128px;
+  }
+  nav li {
+    padding-left: 24px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+  #logo {
+    height: 44px;
+    padding-top: 18px; /* 48 + half line height (26/2=12) - half size (44/2 = 22) = 38 */
+    padding-left: 128px;
+  }
+}
+
+/* article header */
 header {
+  font-family: IBMPlexMono, Roboto, monospace;
   margin: 0px;
 }
 
@@ -93,49 +163,97 @@ header img {
   width: 100%;
 }
 
-section, header h1, header p, nav ul {
-  margin-left: 64px;
-  margin-right: 64px;
+header h1 {
+  font-family: BebasNeueBold, Oswald, sans-serif;
+  padding-top: 16px;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+header p {
+  padding-top: 16px; /* 48 - 34 + 18 = 32 */
+  font-size: 14px;
+  line-height: 26px;
+}
+
+header h1, header p {
+  margin-left: 24px;
+  margin-right: 24px;
   margin-bottom: 0px;
   margin-top: 0px;
 }
 
-header h1 {
-  padding-top: 24px;
-  font-size: 48px;
-  line-height: 48px;
+@media (min-width: 768px) {
+  header h1, header p {
+    margin-left: 64px;
+    margin-right: 64px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  header h1 {
+    padding-top: 24px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  header p {
+    padding-top: 32px; /* 48 - 34 + 18 = 32 */
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  header h1, header p {
+    margin-left: 128px;
+    margin-right: 128px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  header h1 {
+    padding-top: 24px;
+    font-size: 64px;
+    line-height: 64px;
+  }
+  header p {
+    padding-top: 32px; /* 48 - 34 + 18 = 32 */
+    font-size: 18px;
+    line-height: 34px;
+  }
 }
 
-header p {
-  padding-top: 32px; /* 48 - 34 + 18 = 32 */
-  font-size: 16px;
-  line-height: 30px;
-}
+/* section */
 
 section {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-section intro {
-  font-size: 16px;
-  line-height: 30px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-family: IBMPlexSans, Roboto, sans-serif;
 }
 
 section h1 {
+  color: #017FFD;
+  border-top: solid 4px #017FFD;
+  font-family: BebasNeueBold, Oswald, sans-serif;
   margin-top: 24px;
+  margin-bottom: 24px;
   padding-top: 24px;
   font-size: 40px;
   line-height: 40px;
 }
 
 section h2 {
+  color: #353535;
+  font-family: BebasNeueBold, Oswald, sans-serif;
   margin-top: 24px;
   font-size: 26px;
   line-height: 26px;
 }
 
 section h3 {
+  color: #353535;
+  font-family: BebasNeueBold, Oswald, sans-serif;
   margin-top: 24px;
   font-size: 20px;
   line-height: 22px;
@@ -152,112 +270,126 @@ section blockquote {
   line-height: 38px;
 }
 
-#logo {
-  height: 38px;
-  float: left;
-  padding-top: 14px; /* 48 + half line height (24/2=12) - half size (44/2 = 22) = 38 */
-  padding-left: 64px;
+section intro {
+  font-size: 16px;
+  line-height: 30px;
 }
 
-/* nav */
-nav ul {
-  display: flex;
-  justify-content: flex-end;
-  padding-bottom: 24px;
-  padding-top: 24px;
+section blockquote {
+  font-family: IBMPlexMono-LightItalic;
 }
 
-nav li {
-  display: inline-block;
-  padding-left: 24px;
-  font-size: 20px;
-  line-height: 22px;
+summary {
+  font-size: 14px;
+  line-height: 26px;
 }
 
-nav ul li:first-child
-{
-  float: left;
+summary > p {
+  margin-top: 0px;
 }
 
-footer {
-  margin-top: 96px;
-  height: 300px;
-}
-/* responsive */
 @media (min-width: 768px) {
-  header h1 {
-    border-top: solid 8px;
-  }
-  section, header h1, header p, nav ul {
-    margin-left: 128px;
-    margin-right: 128px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-
-  header h1 {
-    padding-top: 48px;
-    font-size: 82px;
-    line-height: 82px;
-  }
-
-  header p {
-    padding-top: 32px; /* 48 - 34 + 18 = 32 */
-    font-size: 18px;
-    line-height: 34px;
-  }
-
   section {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-
-  section intro {
-    font-size: 18px;
-    line-height: 34px;
-  }
-
-  section h1 {
-    margin-top: 48px;
+    margin-left: 64px;
+    margin-right: 64px;
     padding-top: 24px;
-    font-size: 64px;
-    line-height: 64px;
-  }
-
-  section h2 {
-    margin-top: 48px;
-    font-size: 32px;
-    line-height: 34px;
-  }
-
-  section h3 {
-    margin-top: 48px;
-    font-size: 24px;
-    line-height: 26px;
+    padding-bottom: 24px;
+    font-family: IBMPlexSans, Roboto, sans-serif;
   }
   section p {
     font-size: 16px;
     line-height: 30px;
   }
-  section blockquote {
-    font-size: 22px;
-    line-height: 32px;
+  section h1 {
+    margin-top: 48px;
+    margin-bottom: 24px;
+    padding-top: 24px;
+    font-size: 48px;
+    line-height: 48px;
   }
-  #logo {
-    height: 44px;
-    float: left;
-    padding-top: 36px; /* 48 + half line height (24/2=12) - half size (44/2 = 22) = 38 */
-    padding-left: 128px;
+}
+@media (min-width: 1200px) {
+  section {
+    margin-left: 128px;
+    margin-right: 128px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-family: IBMPlexSans, Roboto, sans-serif;
   }
-  nav ul {
-    padding-bottom: 48px;
+}
+
+/* footer */
+
+footer {
+  display: table;
+  width: 100%;
+}
+
+footer {
+  background: #353535;
+  color: #72F6B2;
+  margin-top: 80px;
+  clear: left;
+}
+
+footer ul {
+  float: left;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  padding-left: 0px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  max-width: 200px;
+}
+
+#footer_logo {
+  height: 200px;
+}
+
+footer li {
+  padding-top: 24px;
+  display: block;
+}
+
+footer li h1 {
+  font-family: BebasNeueBold, Oswald, sans-serif;
+  color: #72F6B2;
+}
+
+footer a, footer li {
+  font-family: IBMPlexMono, Roboto, monospace;
+  color: white;
+  font-weight: normal;
+  font-weight:
+  font-size: 14px;
+  line-height: 26px;
+}
+
+@media (min-width: 768px) {
+  footer ul {
+    padding-bottom: 32px;
+    padding-top: 24px;
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+  footer a, footer li {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer ul {
+    padding-bottom: 96px;
     padding-top: 48px;
+    margin-left: 128px;
+    margin-right: 128px;
   }
-  nav li {
-    display: inline-block;
-    padding-left: 48px;
-    font-size: 24px;
-    line-height: 26px;
+  footer a, footer li {
+    font-size: 18px;
+    line-height: 34px;
   }
 }
 
@@ -268,4 +400,47 @@ header {
 .titlebox {
   position: absolute;
   bottom: 0px;
+}
+
+/* newsitems on frontpage */
+.newsitem h2 a {
+  text-decoration: none;
+  color:
+}
+
+.newslist:last-child {
+  display: none;
+}
+
+@media(min-width: 768px) {
+  .newscontainer {
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+    display: table;
+  }
+  .newsitem {
+    width: 40%;
+    display: table-cell;
+  }
+  .newsitem:first-child {
+    padding-right: 24px;
+  }
+  .newsitem:last-child {
+    padding-left: 24px;
+  }
+
+}
+
+.bluebutton {
+  text-align: center;
+  background: #017FFD;
+  color: white;
+  margin: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  display: inline-block;
+  text-decoration: none;
 }

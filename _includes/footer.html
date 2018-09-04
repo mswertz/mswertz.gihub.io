@@ -1,46 +1,29 @@
-<footer class="site-footer">
+<footer>
 
-  <div class="wrapper">
+  <ul>
+    <li><h1>MOLGENIS</h1></li>
+    <li><a href="get">Get</a></li>
+    <li><a href="features">Features</a></li>
+    <li><a href="communities">Communities</a></li><!-- kunnen we ook solutions noemen -->
+    <li><a href="learn">Learn</a></li><!-- samenvoegen met support en dan 'Help' noemen?-->
+    <li><a href="team">Team</a></li><!-- GCC, maar ook over al onze partners -->
+  </ul>
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+  <ul>
+    <li><h1>Free to use</h1></h1>
+    <li>
+      All MOLGENIS software code is licenced under free and open source <a href="/LICENCE-LGPLv3">LGPLv3 License</a>.
+    </li>
+    <li>
+      Please cite <a href="https://www.ncbi.nlm.nih.gov/pubmed/30165396">Van der Velde et al (2018)</a>, <a href="http://www.ncbi.nlm.nih.gov/pubmed/21210979">Swertz et al (2010)</a> or <a href="http://www.ncbi.nlm.nih.gov/pubmed/17297480">Swertz &amp; Jansen (2007)</a> on use.
+    </li>
+</ul>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
-      </div>
+<ul>
+  <li>
+    <a href="/"><img id="footer_logo" src="/assets/img/logo_blue_blue.png"></a>
+  </li>
+</ul>
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
-    </div>
-
-  </div>
-
+<p style="clear:left" align="center"><a href="https://github.com/mswertz/mswertz.github.io/edit/master/{{ page.path }}">Edit this page</a></p>
 </footer>

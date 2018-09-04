@@ -1,7 +1,7 @@
 ---
 title: MOLGENIS
 intro: Flexible software for scientific data
-layout: blue
+layout: black
 partners:
 - bbmri-nl-bw.png: http://bbmri.nl
 - bbmri-eric-bw.png: http://bbmri-eric.eu
@@ -27,9 +27,41 @@ MOLGENIS compute platform: [docs](https://rawgit.com/molgenis/molgenis-compute/m
 
 Pipelines: DNA pipeline [docs](https://molgenis.gitbooks.io/ngs_dna/), [code](https://github.com/molgenis/NGS_DNA), [RNA pipeline](https://github.com/molgenis/NGS_RNA), [easybuild for automatic installation](https://github.com/molgenis/easybuild-easyconfigs)
 
+# News
+<div class="newscontainer">
+
+{% for post in site.posts limit:2 %}
+<div class="newsitem" onclick="location.href = '{{ post.url }}'" style="cursor: pointer">
+<h2><small><a href="{{ post.url }}">{{post.title}}</a></small></h2>
+<small><i>Posted {{ post.date | date: '%A, %B %d, %Y'}}</i></small>
+<p>{{ post.excerpt | strip_html | truncatewords: 50 }} <br/><a href="{{ post.url }}">Read more</a></p>
+</div>
+{% endfor %}
+</div>
+
+<div class="newscontainer">
+{% for post in site.posts limit:1 offset:2 %}
+<div class="newsitem" onclick="location.href = '{{ post.url }}'" style="cursor: pointer">
+<h2><small><a href="{{ post.url }}">{{post.title}}</a></small></h2>
+<small><i>Posted {{ post.date | date: '%A, %B %d, %Y'}}</i></small>
+<p>{{ post.excerpt | strip_html | truncatewords: 50 }} <br/><a href="{{ post.url }}">Read more</a></p>
+</div>
+{% endfor %}
+<div class="newsitem">
+<h2><small>Other news</small></h2>
+{% for post in site.posts offset:3 limit:5 %}
+<p onclick="location.href = '{{ post.url }}'" style="cursor: pointer"><a href="{{ post.url }}">{{post.title}}</a> {{post.intro}} <small><i>{{ post.date | date: '%a, %B %d, %Y'}}</i></small></p>
+<hr/>
+{% endfor %}
+<a class="bluebutton" href="news.html">View news archive</a>
+</div>
+
+</div>
+
 # Partners
 MOLGENIS is developed in collaboration with and funded by:
 
+<div>
 {% for link_hash in page.partners %}
   {% for link in link_hash %}
 <a href="{{ link[1] }}" _target="blank" style="float:left">
@@ -37,3 +69,5 @@ MOLGENIS is developed in collaboration with and funded by:
 </a>
   {% endfor %}
 {% endfor %}
+
+</div>
