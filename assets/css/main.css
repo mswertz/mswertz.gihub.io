@@ -96,10 +96,6 @@ body {
   padding-top: 6px;
 }
 
-#menu:checked:parent {
-  border: solid thin red;
-}
-
 nav {
   font-family: BebasNeueBold, Oswald, sans-serif;
   margin: 0px;
