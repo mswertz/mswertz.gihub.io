@@ -115,7 +115,6 @@ nav ul {
   text-align: right;
   padding-bottom: 24px;
   padding-top: 24px;
-  margin-left: 24px;
   margin-right: 24px;
   margin-bottom: 0px;
   margin-top: 0px;
@@ -149,15 +148,18 @@ nav ul li:first-child
     width: 120px;
   }
 } */
-
-@media (min-width: 768px) {
-  label[for="menu"] {
+@media (min-width: 550px) {
+  label[for=menu] {
     display: none;
   }
+  nav li {
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) {
   nav ul {
     padding-bottom: 48px;
     padding-top: 24px;
-    margin-left: 64px;
     margin-right: 64px;
   }
   nav li {
@@ -165,6 +167,9 @@ nav ul li:first-child
     font-size: 24px;
     line-height: 26px;
     display: inline-block;
+  }
+  nav li:first-child {
+    padding-left: 0px;
   }
   #logo {
     background-size: auto 42px;
@@ -176,13 +181,12 @@ nav ul li:first-child
   nav ul {
     padding-bottom: 96px;
     padding-top: 24px;
-    margin-left: 128px;
     margin-right: 128px;
   }
   nav li {
     padding-left: 24px;
-    font-size: 26px;
-    line-height: 26px;
+    font-size: 28px;
+    line-height: 30px;
   }
   #logo {
     background-size: auto 44px;
