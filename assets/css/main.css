@@ -4,41 +4,46 @@ padding 24px margin horizontal 128px*/
 /* fonts */
 @font-face {
     font-family: BebasNeueBold;
-    src: url(/assets/fonts/BebasNeue-Bold.woff);
+    src: url(/assets/fonts/BebasNeue-Bold.woff) format('font-woff');
 }
 /* from https://github.com/IBM/plex/tree/master/IBM-Plex-Mono/fonts/complete/woff */
 @font-face {
     font-family: IBMPlexMono;
-    src: url(/assets/fonts/IBMPlexMono-Regular.woff);
+    src: url(/assets/fonts/IBMPlexMono-Regular.woff) format('font-woff');
 }
 
 @font-face {
     font-family: IBMPlexSans;
-    src: url(/assets/fonts/IBMPlexSans-Regular.woff);
+    src: url(/assets/fonts/IBMPlexSans-Regular.woff) format('font-woff');
 }
 
 @font-face {
     font-family: IBMPlexMono-LightItalic;
-    src: url(/assets/fonts/IBMPlexMono-Lightitalic.woff);
+    src: url(/assets/fonts/IBMPlexMono-Lightitalic.woff) format('font-woff');
 }
 
 /* colors */
-.green-layout header, .green-layout nav, .green-layout nav a {
+.green-layout header {
   background: #72F6B2;
+}
+.green-layout header, .green-layout nav a {
   color: #353535;
-  text-decoration: none;
 }
 
-.blue-layout header, .blue-layout nav, .blue-layout nav a{
+.blue-layout header {
   background: #017FFD;
-  color: white;
-  text-decoration: none;
 }
 
-.black-layout header, .black-layout nav, .black-layout nav a {
+.blue-layout header, .blue-layout nav a {
+  color: white;
+}
+
+.black-layout header {
   background: #353535;
+}
+
+.black-layout header, .black-layout nav a {
   color: #72F6B2;
-  text-decoration: none;
 }
 
 .green-layout header h1 {
@@ -79,36 +84,54 @@ body {
 }
 
 /* site nav */
+/* toggle for the menu when on small screens, works like a checkbox */
+#menu {
+  display:none;
+}
+#menu ~ label {
+  cursor:pointer;
+}
+#menu:checked ~ li {
+  display: block;
+  padding-top: 6px;
+}
+
+#menu:checked:parent {
+  border: solid thin red;
+}
+
 nav {
   font-family: BebasNeueBold, Oswald, sans-serif;
   margin: 0px;
 }
 
+nav a {
+    text-decoration: none;
+}
+
 nav ul {
   display: flex;
   justify-content: flex-end;
+  text-align: right;
   padding-bottom: 24px;
   padding-top: 24px;
   margin-left: 24px;
   margin-right: 24px;
   margin-bottom: 0px;
   margin-top: 0px;
+  font-size: 20px;
+  line-height: 22px;
 }
 
 nav li {
-  display: inline-block;
+  display: none;
   padding-left: 16px;
-  font-size: 20px;
-  line-height: 22px;
+  text-align:right;
 }
 
 nav ul li:first-child
 {
   float: left;
-}
-
-nav ul li:last-child {
-  display: none;
 }
 
 #logo {
@@ -117,20 +140,20 @@ nav ul li:last-child {
   margin-top: 16px; /* 48 + half line height (24/2=12) - half size (44/2 = 22) = 38 */
   margin-left: 24px;
   float: left;
-  width: 42px;
+  width: 120px;
   height: 42px;
 }
 
-@media (min-width: 550px) {
+/* @media (min-width: 550px) {
   #logo {
     width: 120px;
   }
-  nav ul li:last-child {
-    display: inline-block;
-  }
-}
+} */
 
 @media (min-width: 768px) {
+  label[for="menu"] {
+    display: none;
+  }
   nav ul {
     padding-bottom: 48px;
     padding-top: 24px;
@@ -141,6 +164,7 @@ nav ul li:last-child {
     padding-left: 24px;
     font-size: 24px;
     line-height: 26px;
+    display: inline-block;
   }
   #logo {
     background-size: auto 42px;
@@ -170,9 +194,11 @@ nav ul li:last-child {
 }
 
 /* article header */
-header {
+.green-layout header, .blue-layout header, .black-layout header {
   font-family: IBMPlexMono, Roboto, monospace;
   margin: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header img {
@@ -372,13 +398,14 @@ footer li {
 footer li h1 {
   font-family: BebasNeueBold, Oswald, sans-serif;
   color: #72F6B2;
+  font-size: 20px;
+  line-height: 22px;
 }
 
 footer a, footer li {
   font-family: IBMPlexMono, Roboto, monospace;
   color: white;
   font-weight: normal;
-  font-weight:
   font-size: 14px;
   line-height: 26px;
 }
@@ -390,9 +417,13 @@ footer a, footer li {
     margin-left: 64px;
     margin-right: 64px;
   }
+  footer h1 {
+    font-size: 26px;
+    line-height: 26px;
+  }
   footer a, footer li {
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 26px;
   }
 }
 
@@ -404,8 +435,8 @@ footer a, footer li {
     margin-right: 128px;
   }
   footer a, footer li {
-    font-size: 18px;
-    line-height: 34px;
+    font-size: 14px;
+    line-height: 26px;
   }
 }
 
