@@ -4,22 +4,22 @@ padding 24px margin horizontal 128px*/
 /* fonts */
 @font-face {
     font-family: BebasNeueBold;
-    src: url(/assets/fonts/BebasNeue-Bold.woff) format('font-woff');
+    src: url(/assets/fonts/BebasNeue-Bold.woff);
 }
 /* from https://github.com/IBM/plex/tree/master/IBM-Plex-Mono/fonts/complete/woff */
 @font-face {
     font-family: IBMPlexMono;
-    src: url(/assets/fonts/IBMPlexMono-Regular.woff) format('font-woff');
+    src: url(/assets/fonts/IBMPlexMono-Regular.ttf);
 }
 
 @font-face {
     font-family: IBMPlexSans;
-    src: url(/assets/fonts/IBMPlexSans-Regular.woff) format('font-woff');
+    src: url(/assets/fonts/IBMPlexSans-Regular.ttf);
 }
 
 @font-face {
     font-family: IBMPlexMono-LightItalic;
-    src: url(/assets/fonts/IBMPlexMono-Lightitalic.woff) format('font-woff');
+    src: url(/assets/fonts/IBMPlexMono-Lightitalic.ttf);
 }
 
 /* colors */
