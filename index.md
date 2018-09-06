@@ -1,7 +1,8 @@
 ---
 title: MOLGENIS
 intro: Flexible software for scientific data
-layout: black
+image: /images/frontpage2.jpg
+layout: blue
 partners:
 - bbmri-nl-bw.png: http://bbmri.nl
 - bbmri-eric-bw.png: http://bbmri-eric.eu
