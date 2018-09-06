@@ -1,6 +1,6 @@
 ---
 title: MOLGENIS
-intro: Flexible software for scientific data
+intro: Flexible software for scientists
 image: /images/frontpage2.jpg
 layout: blue
 partners:
