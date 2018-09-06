@@ -199,6 +199,7 @@ nav ul li:first-child
   margin: 0px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center; 
 }
 
 header img {
