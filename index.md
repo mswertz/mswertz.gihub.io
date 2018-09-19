@@ -1,6 +1,6 @@
 ---
 title: MOLGENIS
-intro: Flexible software for scientists
+intro: Flexible software for scientific data.<div align="center"><a class="bluebutton" href="get.html">Start</a></div>  
 image: /images/frontpage2.jpg
 layout: blue
 partners:
@@ -17,9 +17,21 @@ partners:
 - rug-bw.png: http://www.rug.nl/gbic
 - energysense-bw.png: http://www.energyacademy.org/research/energysense
 - dtl-bw.png: http://dtls.nl
-- nfu-bw.png: http://www.nfu.nl/publicaties/data4lifesciences
+- nfud4ls-bw.png: http://www.nfu.nl/publicaties/data4lifesciences
 - e-rare-bw.png: http://www.erare.eu/financed-projects/insaid
+- solverd-bw.png: http://solve-rd.eu/
+- corbel-bw.png: http://www.corbel-project.eu/home.html
+- lifecycle-bw.png: http://lifecycle-project.eu/
+- maxima-bw.png: https://www.prinsesmaximacentrum.com/research/research/our-research-groups/kemmeren-group/
+- palga-bw.png: https://www.palga.nl/
+- durrer-bw.png: https://www.durrercenter.nl/
+- nwo-bw.png: https://www.nwo.nl/
+- zonmw-bw.png: https://www.zonmw.nl/
+- eu-bw.png: https://ec.europa.eu/info/research-and-innovation_en
+
 ---
+
+MOLGENIS is a flexible software suite to find, capture, exchange, manage and analyse diverse scientific data. MOLGENIS helps you to collaborate, structure and analyse your data, make your data FAIR and as Open as you want. It is used in many scientific areas such as biobanking, rare disease research, patient registries, and even energy research!
 
 # Get molgenis
 MOLGENIS data platform: [docs](https://molgenis.gitbooks.io/molgenis/content/), [war](https://molgenis.gitbooks.io/molgenis/content/quickstart/guide-tomcat.html), [docker](https://github.com/molgenis/docker), [code](https://github.com/molgenis/molgenis), [releases](https://github.com/molgenis/molgenis/releases)
@@ -29,46 +41,9 @@ MOLGENIS compute platform: [docs](https://rawgit.com/molgenis/molgenis-compute/m
 Pipelines: DNA pipeline [docs](https://molgenis.gitbooks.io/ngs_dna/), [code](https://github.com/molgenis/NGS_DNA), [RNA pipeline](https://github.com/molgenis/NGS_RNA), [easybuild for automatic installation](https://github.com/molgenis/easybuild-easyconfigs)
 
 # News
-<div class="newscontainer">
-
-{% for post in site.posts limit:2 %}
-<div class="newsitem" onclick="location.href = '{{ post.url }}'" style="cursor: pointer">
-<h2><small><a href="{{ post.url }}">{{post.title}}</a></small></h2>
-<small><i>Posted {{ post.date | date: '%A, %B %d, %Y'}}</i></small>
-<p>{{ post.excerpt | strip_html | truncatewords: 50 }} <br/><a href="{{ post.url }}">Read more</a></p>
-</div>
-{% endfor %}
-</div>
-
-<div class="newscontainer">
-{% for post in site.posts limit:1 offset:2 %}
-<div class="newsitem" onclick="location.href = '{{ post.url }}'" style="cursor: pointer">
-<h2><small><a href="{{ post.url }}">{{post.title}}</a></small></h2>
-<small><i>Posted {{ post.date | date: '%A, %B %d, %Y'}}</i></small>
-<p>{{ post.excerpt | strip_html | truncatewords: 50 }} <br/><a href="{{ post.url }}">Read more</a></p>
-</div>
-{% endfor %}
-<div class="newsitem">
-<h2><small>Other news</small></h2>
-{% for post in site.posts offset:3 limit:5 %}
-<p onclick="location.href = '{{ post.url }}'" style="cursor: pointer"><a href="{{ post.url }}">{{post.title}}</a> {{post.intro}} <small><i>{{ post.date | date: '%a, %B %d, %Y'}}</i></small></p>
-<hr/>
-{% endfor %}
-<a class="bluebutton" href="news.html">View news archive</a>
-</div>
-
-</div>
+{% include newscontainer.html %}
 
 # Partners
-MOLGENIS is developed in collaboration with and funded by:
+MOLGENIS is used by, developed in collaboration with and funded by:
 
-<div>
-{% for link_hash in page.partners %}
-  {% for link in link_hash %}
-<a href="{{ link[1] }}" _target="blank" style="float:left">
-  <img src="/images/{{ link[0] }}" alt="{{ link[1] }}" style="max-width: 100px; padding: 20px" class="partner">
-</a>
-  {% endfor %}
-{% endfor %}
-
-</div>
+{% include partners.html %}
