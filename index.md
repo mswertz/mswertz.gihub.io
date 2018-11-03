@@ -1,7 +1,7 @@
 ---
 title: MOLGENIS
-intro: Flexible software for scientific data.<div align="center"><a class="bluebutton" href="get.html">Start</a></div>  
-image: /images/frontpage2.jpg
+intro: Flexible software for scientific data. <br/>For scientists, by scientists. <br/>MOLGENIS is free, open-source, and easy to use. <div align="center"><a class="bluebutton" href="get.html">Start</a></div>  
+image: /images/frontpage-small.jpeg
 layout: blue
 partners:
 - bbmri-nl-bw.png: http://bbmri.nl
@@ -31,9 +31,16 @@ partners:
 
 ---
 
-MOLGENIS is a flexible software suite to find, capture, exchange, manage and analyse diverse scientific data. MOLGENIS helps you to collaborate, structure and analyse your data, make your data FAIR and as Open as you want. It is used in many scientific areas such as biobanking, rare disease research, patient registries, and even energy research!
+MOLGENIS is a powerful software solution that aims to accelerate scientific discovery. It helps you to make your data FAIR and as Open as you want. It’s easy to use, scalable and helps you find, capture, exchange, manage and analyse large amounts of data. And it is fully customizable: data structure, user interface and layout can be fully changed and you can plug-in your own (bioinformatics) scripts to make your MOLGENIS very special.
+
+MOLGENIS is a flexible modular web application. It helps you to unlock your data to a global audience to have more researchers use your data to push forward new scientific insight, and also enables you to efficiently set up an data management environment for your own research group. You stand on the shoulders of giants: 15 years of open source contributions form your foundation  .
+
+Although MOLGENIS was born from molecular genetics research (and was called 'molecular genetics information system') it has grown to a broadly applicable data tool thanks to many sponsors and contributors. It is used in many scientific areas such as biobanking, rare disease research, patient registries (and even energy research!) and other scientific organisations all around the world.
+
 
 # Get molgenis
+How to get MOLGENIS as service, download or as open source software code:
+
 MOLGENIS data platform: [docs](https://molgenis.gitbooks.io/molgenis/content/), [war](https://molgenis.gitbooks.io/molgenis/content/quickstart/guide-tomcat.html), [docker](https://github.com/molgenis/docker), [code](https://github.com/molgenis/molgenis), [releases](https://github.com/molgenis/molgenis/releases)
 
 MOLGENIS compute platform: [docs](https://rawgit.com/molgenis/molgenis-compute/master/molgenis-compute-core/README.html),[releases](https://github.com/molgenis/molgenis-compute/releases), [code](https://github.com/molgenis/molgenis-compute).

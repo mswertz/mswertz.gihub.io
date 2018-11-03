@@ -6,7 +6,7 @@ layout: green #default layout
 
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-feed
 exclude:
   - Gemfile
