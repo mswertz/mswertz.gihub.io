@@ -3,16 +3,3 @@ title: news
 intro: Here you can find all news items
 layout: green
 ---
-{% for post in site.posts %}
-<article onclick="location.href = '{{ post.url }}'" style="cursor: pointer">
-    <h1>{{ post.title }}</h1>
-    <summary>
-      <p>
-        <small><i>Posted {{ post.date | date: '%A, %B %d, %Y'}}</i></small>
-      </p>
-      <p>
-        <b> {{post.intro}} </b> {{ post.excerpt | strip_html | truncatewords: 50 }} <a href="{{ post.url }}">Read more</a>
-      </p>
-    </summary>
-</article>
-{% endfor %}

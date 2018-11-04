@@ -1,18 +1,8 @@
 ---
-title: MOLGENIS
-intro: How to get MOLGENIS as service, download or as open source software code
+title: GET MOLGENIS
+intro: MOLGENIS is an open source platform that is available for everybody. We have different options for getting access to MOLGENIS and using MOLGENIS, depending on your wishes and needs.
 layout: blue
 ---
-# Hosting and support
-You can get a MOLGENIS ready to use from two hosting/support providers:
-
-**Genomics Coordination Center**  
-University Medical Center Groningen  
-email: <molgenis-support@umcg.nl>
-
-**TraIT service desk, TraIT foundation**   
-Lygature, Utrecht  
-website: <http://www.ctmm-trait.nl/service-desk/>
 
 # Download and install yourself
 You can also install MOLGENIS on your own machines (Licence: LGPLv3). See [Releases](https://github.com/molgenis/molgenis/releases) for overview of versions.
@@ -37,3 +27,5 @@ For testing purposes we now use Docker. We have the ambition to also use it for 
 The complete source code of MOLGENIS is open source available at [Github](http://github.com/molgenis/molgenis)
 
 You can find developer documentation as part of the [Manual](https://molgenis.gitbooks.io)
+
+We are always happy to hear about your experience with MOLGENIS and suggestions for improvement. Please, help us to improve MOLGENIS and send your feedback and ideas to: ..

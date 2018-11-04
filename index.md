@@ -1,56 +1,41 @@
 ---
-title: MOLGENIS
-intro: Flexible software for scientific data. <br/>For scientists, by scientists. <br/>MOLGENIS is free, open-source, and easy to use. <div align="center"><a class="bluebutton" href="get.html">Start</a></div>  
-image: /images/frontpage-small.jpeg
+title: "Love your scientific data."
+intro: Free. Open source. Simple to use.<br/><br/>MOLGENIS a data platform to accelerate your scientific endavours. <br/><br/>And for bioinformaticians who want to make their researchers happy.<br/><br/><br/><br/><br/>
+image: /images/frontpage-small-darker.jpeg
 layout: blue
-partners:
-- bbmri-nl-bw.png: http://bbmri.nl
-- bbmri-eric-bw.png: http://bbmri-eric.eu
-- umcg-bw.png: http://geneticsgroningen.nl
-- rd-connect-bw.png: http://rd-connect.eu
-- lifelines-bw.png: http://lifelines.net
-- trait-bw.png: http://ctmm-trait.nl
-- bioshare-bw.png: http://bioshare.eu
-- biomedbridges-bw.png: http://biomedbridges.eu
-- panacea-bw.png: http://www.wageningenur.nl/en/Expertise-Services/Chair-groups/Plant-Sciences/Laboratory-of-Nematology/Projects/PANACEA.htm
-- tifn-bw.png: http://www.tifn.nl
-- rug-bw.png: http://www.rug.nl/gbic
-- energysense-bw.png: http://www.energyacademy.org/research/energysense
-- dtl-bw.png: http://dtls.nl
-- nfud4ls-bw.png: http://www.nfu.nl/publicaties/data4lifesciences
-- e-rare-bw.png: http://www.erare.eu/financed-projects/insaid
-- solverd-bw.png: http://solve-rd.eu/
-- corbel-bw.png: http://www.corbel-project.eu/home.html
-- lifecycle-bw.png: http://lifecycle-project.eu/
-- maxima-bw.png: https://www.prinsesmaximacentrum.com/research/research/our-research-groups/kemmeren-group/
-- palga-bw.png: https://www.palga.nl/
-- durrer-bw.png: https://www.durrercenter.nl/
-- nwo-bw.png: https://www.nwo.nl/
-- zonmw-bw.png: https://www.zonmw.nl/
-- eu-bw.png: https://ec.europa.eu/info/research-and-innovation_en
-
 ---
 
-MOLGENIS is a powerful software solution that aims to accelerate scientific discovery. It helps you to make your data FAIR and as Open as you want. It’s easy to use, scalable and helps you find, capture, exchange, manage and analyse large amounts of data. And it is fully customizable: data structure, user interface and layout can be fully changed and you can plug-in your own (bioinformatics) scripts to make your MOLGENIS very special.
+# Features
 
-MOLGENIS is a flexible modular web application. It helps you to unlock your data to a global audience to have more researchers use your data to push forward new scientific insight, and also enables you to efficiently set up an data management environment for your own research group. You stand on the shoulders of giants: 15 years of open source contributions form your foundation  .
+MOLGENIS helps to find, capture, exchange, manage and analyse scientific data. And it is fully customizable: data structure, user interface and layout can be fully changed and you can plug-in your own (bioinformatics) scripts to make your MOLGENIS very special.
 
-Although MOLGENIS was born from molecular genetics research (and was called 'molecular genetics information system') it has grown to a broadly applicable data tool thanks to many sponsors and contributors. It is used in many scientific areas such as biobanking, rare disease research, patient registries (and even energy research!) and other scientific organisations all around the world.
+<div style="text-align: center">
+<a href="features" class="bluebutton">Discover more features</a>
+</div>
 
+# Applications
+
+MOLGENIS was born from molecular genetics research and is now a broadly applicable data tool thanks to many sponsors and contributors. It is used in many scientific areas such as biobanking, rare disease research, patient registries (and even energy research!) and other scientific organisations all around the world.
+
+<div style="text-align: center">
+<a href="features" class="bluebutton">Discover more applications</a>
+</div>
 
 # Get molgenis
-How to get MOLGENIS as service, download or as open source software code:
 
 MOLGENIS data platform: [docs](https://molgenis.gitbooks.io/molgenis/content/), [war](https://molgenis.gitbooks.io/molgenis/content/quickstart/guide-tomcat.html), [docker](https://github.com/molgenis/docker), [code](https://github.com/molgenis/molgenis), [releases](https://github.com/molgenis/molgenis/releases)
 
 MOLGENIS compute platform: [docs](https://rawgit.com/molgenis/molgenis-compute/master/molgenis-compute-core/README.html),[releases](https://github.com/molgenis/molgenis-compute/releases), [code](https://github.com/molgenis/molgenis-compute).
 
-Pipelines: DNA pipeline [docs](https://molgenis.gitbooks.io/ngs_dna/), [code](https://github.com/molgenis/NGS_DNA), [RNA pipeline](https://github.com/molgenis/NGS_RNA), [easybuild for automatic installation](https://github.com/molgenis/easybuild-easyconfigs)
+MOLGENIS Pipelines: DNA pipeline [docs](https://molgenis.gitbooks.io/ngs_dna/), [code](https://github.com/molgenis/NGS_DNA), [RNA pipeline](https://github.com/molgenis/NGS_RNA), [easybuild for automatic installation](https://github.com/molgenis/easybuild-easyconfigs)
+
+<div style="text-align: center">
+<a href="get" class="bluebutton">Discover more resources</a>
+</div>
 
 # News
 {% include newscontainer.html %}
 
-# Partners
-MOLGENIS is used by, developed in collaboration with and funded by:
-
-{% include partners.html %}
+<div style="text-align: center">
+<a href="learn" class="bluebutton">Discover more news</a>
+</div>

@@ -1,5 +1,185 @@
 /* margin 96px unrelated, 48px unrelated
 padding 24px margin horizontal 128px*/
+/** 62.5% is makes 1rem about 10px**/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0px;
+}
+/** paddings and margins **/
+header, section, footer {
+  margin-top: 2.4rem;
+  padding-top: 1.6rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+
+footer ul {
+  width: 100%;
+}
+
+@media (min-width: 25em) {
+  html {
+    font-size:  62.5%; //so that is about 40 characters in default font. We need 45-80
+  }
+}
+
+.feature_box {
+  display: flex;
+  margin-top: 2.4rem;
+}
+
+.feature_content_box {
+  width: 100%; /** will get smaller on higher res**/
+}
+
+.feature_image_box {
+  display: flex;
+  width: 0%;/** will be shown on higher res **/
+  align-items: center;
+  justify-content: center;
+}
+
+.feature_image_box img {
+  width: 60%;
+}
+
+#menu:not(:checked) ~ li {
+  display: none;
+}
+
+dt {
+  background-size: 0 0; /** hide background image unless higher resolution*//
+}
+@media (min-width: 40em) {
+  html {
+    font-size: 62.5%;
+  }
+  header, section, footer {
+    padding-left: 6.4rem;
+    padding-right: 6.4rem;
+  }
+  .feature_image_box {
+    width: 35%;
+  }
+  .feature_content_box {
+    width: 65%;
+  }
+  footer ul {
+    width: 30%;
+    padding-right: 1.6rem;
+  }
+}
+@media (min-width: 67em) {
+  html {
+    font-size: 80%;
+  }
+  header, section, footer {
+    padding-left: 12.8rem;
+    padding-right: 12.8rem;
+  }
+  #menu:not(:checked) ~ li {
+    display: inline-block;
+  }
+  label[for=menu] {
+    display: none;
+  }
+  nav li:first-child {
+    padding-left: 0px;
+  }
+  .newscontainer {
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .newsitem {
+    width: 40%;
+    display: table-cell;
+  }
+}
+
+@media (min-width: 100em) {
+  html {
+    font-size: 100%;
+  }
+  header, section, footer {
+    padding-left: 25.6rem;
+    padding-right: 25.6rem;
+  }
+}
+
+nav {
+  height: 4.8em;
+  padding-top: 0.8em;
+}
+header h1, header p, section, section h1, section h2, section h3, .feature_box {
+  margin: 0px;
+  padding-top: 1.6rem;
+}
+
+#logo {
+  background-size: auto 3.8rem;
+  width: 12rem;
+  height: 4.2rem;
+}
+
+#footer_logo {
+  height: 10rem;
+}
+
+nav, footer ul {
+}
+
+nav li {
+  padding-left: 1.6rem;
+}
+
+/** sizes **/
+header h1 {
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+}
+header p, nav ul {
+  font-size: 1.6rem;
+  line-height: 3.0rem;
+}
+
+section, footer a, footer li, summary {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+}
+
+section h1 {
+  font-size: 4.0rem;
+  line-height: 4.0rem;
+}
+section h2 {
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+}
+
+section h3, footer li h1 {
+  font-size: 2.0rem;
+  line-height: 2.2rem;
+}
+
+section intro {
+  font-size: 1.6rem;
+  line-height: 3.0rem;
+}
+
+section blockquote {
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+}
+
+summary > p {
+  margin-top: 0px;
+}
 
 /* fonts */
 @font-face {
@@ -20,6 +200,22 @@ padding 24px margin horizontal 128px*/
 @font-face {
     font-family: IBMPlexMono-LightItalic;
     src: url(/assets/fonts/IBMPlexMono-Lightitalic.ttf);
+}
+
+header h1, section h1, section h2, section h3, nav, footer li h1 {
+  font-family: BebasNeueBold, Oswald, sans-serif;
+}
+
+header p, footer a, footer li {
+  font-family: IBMPlexMono, "Roboto Mono", monospace;
+}
+
+section {
+  font-family: IBMPlexSans, Roboto, sans-serif;
+}
+
+section blockquote {
+  font-family: IBMPlexMono-LightItalic;
 }
 
 /* colors */
@@ -48,39 +244,32 @@ padding 24px margin horizontal 128px*/
 
 .green-layout header h1 {
   color: #353535;
-  border-top: solid 2px #353535;
+  border-color: #353535;
 }
 
 .blue-layout header h1 {
-  border-top: solid 2px white;
+  border-color: white;
 }
 
 .black-layout header h1 {
-  border-top: solid 2px #72F6B2;
+  border-color: #72F6B2;
 }
-@media (min-width: 768px) {
-  .green-layout header h1 {
-    border-top: solid 4px #353535;
-  }
-
-  .blue-layout header h1 {
-    border-top: solid 4px white;
-  }
-
-  .black-layout header h1 {
-    border-top: solid 4px #72F6B2;
-  }
-}
-
-
 
 .black-layout header p {
   color: white;
 }
 
-/* body */
-body {
-  margin: 0px;
+h1 {
+  border-top: 0.2rem solid;
+}
+
+section h1 {
+  color: #017FFD;
+  border-color: #017FFD;
+}
+
+section h2, section h3 {
+  color: #353535;
 }
 
 /* site nav */
@@ -93,11 +282,10 @@ body {
 }
 #menu:checked ~ li {
   display: block;
-  padding-top: 6px;
+  padding-top: 0.6rem;
 }
 
 nav {
-  font-family: BebasNeueBold, Oswald, sans-serif;
   margin: 0px;
 }
 
@@ -109,18 +297,10 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   text-align: right;
-  padding-bottom: 24px;
-  padding-top: 24px;
-  margin-right: 24px;
-  margin-bottom: 0px;
   margin-top: 0px;
-  font-size: 20px;
-  line-height: 22px;
 }
 
 nav li {
-  display: none;
-  padding-left: 16px;
   text-align:right;
 }
 
@@ -130,72 +310,12 @@ nav ul li:first-child
 }
 
 #logo {
-  background-size: auto 38px;
   background-repeat: no-repeat;
-  margin-top: 16px; /* 48 + half line height (24/2=12) - half size (44/2 = 22) = 38 */
-  margin-left: 24px;
   float: left;
-  width: 120px;
-  height: 42px;
 }
 
-/* @media (min-width: 550px) {
-  #logo {
-    width: 120px;
-  }
-} */
-@media (min-width: 550px) {
-  label[for=menu] {
-    display: none;
-  }
-  nav li {
-    display: inline-block;
-  }
-}
-@media (min-width: 768px) {
-  nav ul {
-    padding-bottom: 48px;
-    padding-top: 24px;
-    margin-right: 64px;
-  }
-  nav li {
-    padding-left: 24px;
-    font-size: 24px;
-    line-height: 26px;
-    display: inline-block;
-  }
-  nav li:first-child {
-    padding-left: 0px;
-  }
-  #logo {
-    background-size: auto 42px;
-    margin-top: 17px; /* 48 + half line height (24/2=12) - half size (44/2 = 22) = 38 */
-    margin-left: 64px;
-  }
-}
-@media (min-width: 1200px) {
-  nav ul {
-    padding-bottom: 96px;
-    padding-top: 24px;
-    margin-right: 128px;
-  }
-  nav li {
-    padding-left: 24px;
-    font-size: 28px;
-    line-height: 30px;
-  }
-  #logo {
-    background-size: auto 44px;
-    margin-top: 18px; /* 48 + half line height (26/2=12) - half size (44/2 = 22) = 38 */
-    margin-left: 128px;
-    height: 48px;
-
-  }
-}
-
-/* article header */
+/* article  */
 .green-layout header, .blue-layout header, .black-layout header {
-  font-family: IBMPlexMono, Roboto, monospace;
   margin: 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -206,189 +326,19 @@ header img {
   width: 100%;
 }
 
-header h1 {
-  font-family: BebasNeueBold, Oswald, sans-serif;
-  padding-top: 16px;
-  font-size: 40px;
-  line-height: 40px;
-}
-
-header p {
-  padding-top: 16px; /* 48 - 34 + 18 = 32 */
-  font-size: 14px;
-  line-height: 26px;
-}
-
-header h1, header p {
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-
-@media (min-width: 768px) {
-  header h1, header p {
-    margin-left: 64px;
-    margin-right: 64px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-  header h1 {
-    padding-top: 24px;
-    font-size: 48px;
-    line-height: 48px;
-  }
-  header p {
-    padding-top: 32px; /* 48 - 34 + 18 = 32 */
-    font-size: 16px;
-    line-height: 30px;
-  }
-}
-@media (min-width: 1200px) {
-  header h1, header p {
-    margin-left: 128px;
-    margin-right: 128px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-  header h1 {
-    padding-top: 24px;
-    font-size: 82px;
-    line-height: 82px;
-  }
-  header p {
-    padding-top: 32px; /* 48 - 34 + 18 = 32 */
-    font-size: 28px;
-    line-height: 52px;
-  }
-}
-
-/* section */
-
-section {
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  font-family: IBMPlexSans, Roboto, sans-serif;
-}
-
-section h1 {
-  color: #017FFD;
-  border-top: solid 4px #017FFD;
-  font-family: BebasNeueBold, Oswald, sans-serif;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  padding-top: 24px;
-  font-size: 40px;
-  line-height: 40px;
-}
-
-section h2 {
-  color: #353535;
-  font-family: BebasNeueBold, Oswald, sans-serif;
-  margin-top: 24px;
-  font-size: 26px;
-  line-height: 26px;
-}
-
-section h3 {
-  color: #353535;
-  font-family: BebasNeueBold, Oswald, sans-serif;
-  margin-top: 24px;
-  font-size: 20px;
-  line-height: 22px;
-}
-
-section p {
-  font-size: 14px;
-  line-height: 26px;
-}
-
-section blockquote {
-  font-size: 26px;
-  color: #017FFD;
-  line-height: 38px;
-}
-
-section intro {
-  font-size: 16px;
-  line-height: 30px;
-}
-
-section blockquote {
-  font-family: IBMPlexMono-LightItalic;
-}
-
-summary {
-  font-size: 14px;
-  line-height: 26px;
-}
-
-summary > p {
-  margin-top: 0px;
-}
-
-@media (min-width: 768px) {
-  section {
-    margin-left: 64px;
-    margin-right: 64px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    font-family: IBMPlexSans, Roboto, sans-serif;
-  }
-  section p {
-    font-size: 16px;
-    line-height: 30px;
-  }
-  section h1 {
-    margin-top: 48px;
-    margin-bottom: 24px;
-    padding-top: 24px;
-    font-size: 48px;
-    line-height: 48px;
-  }
-}
-@media (min-width: 1200px) {
-  section {
-    margin-left: 128px;
-    margin-right: 128px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    font-family: IBMPlexSans, Roboto, sans-serif;
-  }
-}
 
 /* footer */
-
 footer {
-  display: table;
-  width: 100%;
-}
-
-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  justify-content: space-evenly;
   background: #353535;
   color: #72F6B2;
-  margin-top: 80px;
-  clear: left;
 }
 
 footer ul {
-  float: left;
-  padding-bottom: 24px;
-  padding-top: 24px;
   padding-left: 0px;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  max-width: 200px;
-}
-
-#footer_logo {
-  height: 200px;
 }
 
 footer li {
@@ -396,48 +346,12 @@ footer li {
 }
 
 footer li h1 {
-  font-family: BebasNeueBold, Oswald, sans-serif;
   color: #72F6B2;
-  font-size: 20px;
-  line-height: 22px;
 }
 
 footer a, footer li {
-  font-family: IBMPlexMono, Roboto, monospace;
   color: white;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 26px;
-}
-
-@media (min-width: 768px) {
-  footer ul {
-    padding-bottom: 32px;
-    padding-top: 24px;
-    margin-left: 64px;
-    margin-right: 64px;
-  }
-  footer h1 {
-    font-size: 26px;
-    line-height: 26px;
-  }
-  footer a, footer li {
-    font-size: 14px;
-    line-height: 26px;
-  }
-}
-
-@media (min-width: 1200px) {
-  footer ul {
-    padding-bottom: 96px;
-    padding-top: 48px;
-    margin-left: 128px;
-    margin-right: 128px;
-  }
-  footer a, footer li {
-    font-size: 14px;
-    line-height: 26px;
-  }
 }
 
 /** to deal with the image in the title we must have title flowing over the image in the header */
@@ -459,35 +373,14 @@ header {
   display: none;
 }
 
-@media(min-width: 768px) {
-  .newscontainer {
-    clear: both;
-    margin: 0px;
-    padding: 0px;
-    display: table;
-  }
-  .newsitem {
-    width: 40%;
-    display: table-cell;
-  }
-  .newsitem:first-child {
-    padding-right: 24px;
-  }
-  .newsitem:last-child {
-    padding-left: 24px;
-  }
-
-}
-
 .bluebutton {
-  text-align: center;
+  display:inline-block;
   background: #017FFD;
   color: white;
-  margin: 24px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 16px;
-  padding-top: 16px;
-  display: inline-block;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  padding-bottom: 1.6rem;
+  padding-top: 1.6rem;
+  margin-bottom: 1.6rem;
   text-decoration: none;
 }
