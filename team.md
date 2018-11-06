@@ -1,6 +1,6 @@
 ---
-title: Support
-intro: A team of 20 developers, researchers and data managers develops, supports and continuously improves the software. We are always happy to hear about your experience with MOLGENIS. Please, help us to improve MOLGENIS and send your feedback and ideas to <a href="mailto:molgenis-support@umcg.nl">molgenis-support@umcg.nl</a>
+title: Team
+intro: A team of 20 developers, researchers and data managers develops, supports and continuously improves the software. And a community of 20+ partners supports the project. We are always happy to hear about your experiences. Please, help us to improve MOLGENIS and send your feedback and ideas to <a href="mailto:molgenis-support@umcg.nl">molgenis-support@umcg.nl</a>
 layout: green
 partners:
 - bbmri-nl-bw.png: http://bbmri.nl
