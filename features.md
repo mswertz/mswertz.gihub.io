@@ -16,7 +16,7 @@ Model, capture, and manage your data. Quickly upload data files, or enter data v
 <div class="feature_image_box"><img src="/images/noun_Share_2020990_blue.svg"/></div>
 <div class="feature_content_box">
 <h1> FAIR data sharing</h1>
-Make your data findable, interoperable, accessible, reusable. We believe data sharing and re-use should be easy. Quickly create explorers for your data sets and variables to the outside world while preventing exposure of (sensitive) data values using the fine-grained permission system.
+Make your data findable, interoperable, accessible, reusable (FAIR). We believe data sharing and re-use should be easy. MOLGENIS enables you to quickly create explorers for your data sets and variables to the outside world while preventing exposure of (sensitive) data values using the fine-grained permission system.
 <br/>Example: <a href="http://www.palgaopenbaredatabank.nl">http://www.palgaopenbaredatabank.nl</a>
 </div>
 </div>
@@ -24,7 +24,7 @@ Make your data findable, interoperable, accessible, reusable. We believe data sh
 <div class="feature_box">
 <div class="feature_content_box">
 <h1>secure access</h1>
-Easily control group, role and individual access.MOLGENIS data is organised following scientific practice. Data is divided in research groups, within the groups you can assign roles such as 'data manager', 'data editor' and 'data user'. Authentication can be ensured by connecting you institute account via SURFconext (NL) and BBMRI/ELIXIR AAI (Europe) or using Google two-factor authentication.
+Easily control group, role and individual access. MOLGENIS data is organised following scientific practice. Data can be divided in research groups, within the groups you can assign roles such as 'data manager', 'data editor' and 'data user'. Authentication can be ensured by connecting you institute account via SURFconext (NL) and BBMRI/ELIXIR AAI (Europe) or using Google two-factor authentication.
 </div>
 <div class="feature_image_box"><img src="/images/noun_Security_1980517_blue.svg"/></div>
 </div>
@@ -41,7 +41,7 @@ Bioinformaticians can take full control in MOLGENIS. Add scripts in your favorit
 <div class="feature_box">
 <div class="feature_content_box">
 <h1>Harmonization and integration</h1>
-Make your data interoperable. Combined analysis is much more powerful than running smaller analyses on each data set separately, but data integration is hard. MOLGENIS offers you different 'FAIRification' tools to find related data, codify your data contents and transforms different tables into one standardized table.
+Make your data interoperable. Combined analysis is much more powerful than running smaller analyses on each data set separately, but data integration is hard. MOLGENIS offers you multiple 'FAIRification' tools to find related data, codify your data contents and transforms different tables into one standardized table.
 <br/>Examples: <a href="http://biobankconnect.org">http://biobankconnect.org</a> and <a href="http://molgenis.org/sorta">http://molgenis.org/sorta</a>
 </div>
 <div class="feature_image_box"><img src="/images/noun_data_integration_1630965_blue.svg"/></div>
@@ -51,14 +51,14 @@ Make your data interoperable. Combined analysis is much more powerful than runni
 <div class="feature_image_box"><img src="/images/noun_Task_Schedule_327705_blue.svg"/></div>
 <div class="feature_content_box">
 <h1>Task automation</h1>
-Automate data uploads, tranformation, statistics. Often data from multiple sources must be combined for success and thus data exchanges, transformations, analysis must be repeated often. We believe in reproducible science so you can automate tasks with MOLGENIS job scheduling tools.
+Automate data upload, tranformation and statistics. Frequently data from multiple sources must be combined for success. Therefore, data exchanges, transformations, and analyses must be repeated often. We believe in reproducible science so you can automate tasks with MOLGENIS job scheduling tools.
 </div>
 </div>
 
 <div class="feature_box">
 <div class="feature_content_box">
 <h1>Questionnaires</h1>
-Get data directly from the source. Use MOLGENIS questionnaire tool to ask for individuals input. The tools provides chapters, subquestions, advanced validations, conditional or 'skip' questions and intermediate save (so you can fill in the rest of the survey later).
+Get data directly from the source. Use the questionnaire tool to ask for individuals input. The tool provides chapters, subquestions, advanced validations, conditional or 'skip' questions and intermediate save (so you can fill in the rest of the survey later).
 </div>  
 <div class="feature_image_box"><img src="/images/noun_professional_skills_1248512_blue.svg"/></div>
 </div>
@@ -74,7 +74,7 @@ Change data structure, menus, logic and layout. MOLGENIS is the only software in
 <div class="feature_box">
 <div class="feature_content_box">
 <h1>App development platform</h1>
-Add your own user interfaces to the app store. MOLGENIS gives programmers complete freedom create html+javascript applications using MOLGENIS REST-style programmers interfaces. But even better: you can upload these apps as sort-of plugins to become part of MOLGENIS itself. Then you can add them to the menu and use them seamlessly.
+Add your own user interfaces to the app store. MOLGENIS gives programmers the complete freedom to create HTML+JavaScript applications using MOLGENIS REST-style programmers interfaces. But it gets even better: you can upload these apps like plugins to become part of MOLGENIS itself and use them seamlessly.
 </div>
 <div class="feature_image_box"><img src="/images/noun_web_developer_1873915_blue.svg"/></div>
 </div>
